@@ -97,7 +97,7 @@
   /* REGIONAL BALANCE BAR */
   .reg-bar {
     display: grid;
-    grid-template-columns: 6fr 8fr 5fr 4fr 7fr 3fr 2fr;
+    grid-template-columns: 6fr 7fr 4fr 4fr 8fr 3fr 3fr;
     gap: 3px;
     height: 15px;
   }
@@ -139,7 +139,7 @@
     overflow: hidden;
     background: #0F172A;
   }
-  .art-big svg { width: 100%; height: 100%; display: block; }
+  .art-big svg, .art-big img { width: 100%; height: 100%; display: block; object-fit: cover; }
   .banner-pill {
     position: absolute;
     top: 6px;
@@ -240,7 +240,7 @@
     overflow: hidden;
     background: #1B2434;
   }
-  .art-sm svg { width: 100%; height: 100%; display: block; }
+  .art-sm svg, .art-sm img { width: 100%; height: 100%; display: block; object-fit: cover; }
   .sm-pill {
     position: absolute;
     top: 4px;
@@ -380,34 +380,19 @@
 
   <div class="reg-bar">
     <div class="rb rb-eu">Europe 6</div>
-    <div class="rb rb-as">Asia 8</div>
-    <div class="rb rb-me">Mid East 5</div>
+    <div class="rb rb-as">Asia 7</div>
+    <div class="rb rb-me">Mid East 4</div>
     <div class="rb rb-af">Africa 4</div>
-    <div class="rb rb-am">Americas 7</div>
+    <div class="rb rb-am">Americas 8</div>
     <div class="rb rb-oc">Oceania 3</div>
-    <div class="rb rb-gl">Global 2</div>
+    <div class="rb rb-gl">Global 3</div>
   </div>
 
   <!-- 3 BIG LEAD STORIES -->
   <section class="leads-3">
     <article class="lead-big">
       <div class="art-big">
-        <svg viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="gCop" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#D1FAE5"/><stop offset="100%" stop-color="#A7F3D0"/></linearGradient>
-          </defs>
-          <rect width="320" height="120" fill="url(#gCop)"/>
-          <circle cx="148" cy="74" r="30" fill="#0EA5E9" stroke="#0F172A" stroke-width="2.5"/>
-          <path d="M132,57 Q148,50 162,59 Q166,72 155,81 Q138,85 129,72 Z" fill="#16A34A"/>
-          <path d="M159,78 Q170,76 172,89 Q163,98 154,91 Z" fill="#16A34A"/>
-          <rect x="198" y="34" width="12" height="54" rx="6" fill="#FFF" stroke="#0F172A" stroke-width="2.2"/>
-          <circle cx="204" cy="88" r="10.5" fill="#DC2626" stroke="#0F172A" stroke-width="2.2"/>
-          <rect x="201" y="46" width="6" height="40" fill="#DC2626"/>
-          <circle cx="262" cy="70" r="28" fill="#FFF" stroke="#0F172A" stroke-width="2.5"/>
-          <line x1="262" y1="70" x2="262" y2="50" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
-          <line x1="262" y1="70" x2="277" y2="77" stroke="#DC2626" stroke-width="3.2" stroke-linecap="round"/>
-          <path d="M262,42 A28,28 0 0 1 288,60" fill="none" stroke="#DC2626" stroke-width="4.2"/>
-        </svg>
+        <img src="ART_COP31" alt="COP31 Antalya Overtime">
         <span class="banner-pill" style="background:#15803D;">COP31: OVERTIME</span>
         <span class="sub-pill">Day 13 &middot; No deal yet</span>
         <span class="cap-pill">Antalya &middot; AFP / Al Jazeera</span>
@@ -419,25 +404,9 @@
 
     <article class="lead-big">
       <div class="art-big">
-        <svg viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg">
-          <rect width="320" height="120" fill="#0F1C36"/>
-          <rect x="16" y="82" width="18" height="38" fill="#1E293B"/>
-          <rect x="38" y="68" width="22" height="52" fill="#334155"/>
-          <polygon points="88,44 98,120 78,120" fill="#475569"/>
-          <rect x="108" y="76" width="20" height="44" fill="#1E293B"/>
-          <rect x="134" y="72" width="24" height="48" fill="#334155"/>
-          <path d="M296,94 Q242,46 192,36" stroke="#EF4444" stroke-width="2.6" stroke-dasharray="5 3" fill="none"/>
-          <path d="M308,108 Q264,72 224,64" stroke="#EF4444" stroke-width="2.4" stroke-dasharray="5 3" fill="none"/>
-          <path d="M282,112 Q256,88 242,84" stroke="#EF4444" stroke-width="2.2" stroke-dasharray="4 3" fill="none"/>
-          <path d="M98,78 L190,36" stroke="#38BDF8" stroke-width="2.5" fill="none"/>
-          <path d="M124,86 L222,64" stroke="#38BDF8" stroke-width="2.5" fill="none"/>
-          <path d="M148,94 L240,84" stroke="#38BDF8" stroke-width="2.2" fill="none"/>
-          <circle cx="191" cy="36" r="14" fill="#F97316" opacity="0.45"/><circle cx="191" cy="36" r="6" fill="#FEF08A"/>
-          <circle cx="223" cy="64" r="12" fill="#F97316" opacity="0.45"/><circle cx="223" cy="64" r="5" fill="#FEF08A"/>
-          <circle cx="241" cy="84" r="10" fill="#F97316" opacity="0.45"/><circle cx="241" cy="84" r="4" fill="#FEF08A"/>
-        </svg>
-        <span class="banner-pill">SAUDI: MISSILES</span>
-        <span class="sub-pill">5 shot down &middot; Riyadh &amp; Jizan</span>
+        <img src="ART_RIYADH" alt="Saudi Air Defenses Intercept 5 Houthi Missiles">
+        <span class="banner-pill">SAUDI: 5 MISSILES</span>
+        <span class="sub-pill">3 Riyadh &middot; 2 Jizan downed</span>
         <span class="cap-pill">Coalition count &middot; AFP / Dawn</span>
       </div>
       <div class="kicker-line" style="color:#B91C1C;"><span class="num-dot c-me">2</span> RIYADH &middot; JIZAN &middot; DEFENSE</div>
@@ -447,15 +416,8 @@
 
     <article class="lead-big">
       <div class="art-big">
-        <svg viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg">
-          <rect width="320" height="120" fill="#FEF3C7"/>
-          <polygon points="0,120 58,52 112,88 176,36 244,82 292,52 320,120" fill="#B45309" opacity="0.22"/>
-          <polyline points="8,80 58,80 74,76 86,84 100,70 112,92 124,44 136,108 148,28 160,100 172,56 184,88 198,74 214,82 242,80 312,80" fill="none" stroke="#991B1B" stroke-width="3.2"/>
-          <circle cx="266" cy="56" r="25" fill="none" stroke="#DC2626" stroke-width="2" opacity="0.5"/>
-          <circle cx="266" cy="56" r="15" fill="none" stroke="#DC2626" stroke-width="2.5"/>
-          <circle cx="266" cy="56" r="5.5" fill="#DC2626"/>
-        </svg>
-        <span class="banner-pill" style="background:#9A3412;">PERU: QUAKE 6.7</span>
+        <img src="ART_PERU" alt="Magnitude 6.7 Earthquake in Central Peru">
+        <span class="banner-pill" style="background:#9A3412;">PERU: M6.7 QUAKE</span>
         <span class="sub-pill">00:09 UTC &middot; 108 km deep</span>
         <span class="cap-pill">USGS / IGP &middot; WaPo</span>
       </div>
@@ -469,14 +431,7 @@
   <section class="grid-5">
     <article class="card-sm">
       <div class="art-sm">
-        <svg viewBox="0 0 190 66" xmlns="http://www.w3.org/2000/svg">
-          <rect width="190" height="38" fill="#0F172A"/><rect y="38" width="190" height="28" fill="#334155"/>
-          <line x1="8" y1="53" x2="182" y2="53" stroke="#FACC15" stroke-width="1.6" stroke-dasharray="10 6"/>
-          <path d="M52,40 L142,40 L152,34 L134,30 L66,30 Z" fill="#F8FAFC"/>
-          <polygon points="56,30 46,18 64,30" fill="#DC2626"/>
-          <path d="M88,40 L78,50 L92,50 Z" fill="#F59E0B"/>
-          <circle cx="110" cy="42" r="4" fill="#EF4444"/>
-        </svg>
+        <img src="ART_DAVAO" alt="Air Niugini 767 Davao Evacuation">
         <span class="sm-pill" style="background:#0369A1;">DAVAO: 146 SAFE</span>
         <span class="sm-cap">Flight PX19 &middot; AP</span>
       </div>
@@ -487,14 +442,7 @@
 
     <article class="card-sm">
       <div class="art-sm">
-        <svg viewBox="0 0 190 66" xmlns="http://www.w3.org/2000/svg">
-          <rect width="190" height="66" fill="#0B2447"/>
-          <circle cx="48" cy="39" r="16" fill="none" stroke="#FACC15" stroke-width="2.4" stroke-dasharray="2.5 6"/>
-          <rect x="82" y="30" width="54" height="21" rx="2" fill="#1E3A5F" stroke="#38BDF8" stroke-width="1.5"/>
-          <text x="109" y="43" text-anchor="middle" fill="#E0F2FE" font-size="7.5" font-weight="900">EXPORT</text>
-          <circle cx="158" cy="38" r="13" fill="none" stroke="#EF4444" stroke-width="3.2"/>
-          <line x1="149" y1="29" x2="167" y2="47" stroke="#EF4444" stroke-width="3.2"/>
-        </svg>
+        <img src="ART_PLASTIC" alt="EU Plastic-Waste Export Ban">
         <span class="sm-pill" style="background:#1D4ED8;">EU: PLASTIC BAN</span>
         <span class="sm-cap">In force &middot; EU</span>
       </div>
@@ -506,12 +454,21 @@
     <article class="card-sm">
       <div class="art-sm">
         <svg viewBox="0 0 190 66" xmlns="http://www.w3.org/2000/svg">
-          <rect width="190" height="66" fill="#B91C1C"/>
-          <rect x="52" y="0" width="12" height="66" fill="#FFF"/>
-          <rect x="0" y="27" width="190" height="12" fill="#FFF"/>
-          <circle cx="134" cy="38" r="16" fill="#0F172A" opacity="0.85"/>
-          <line x1="124" y1="28" x2="144" y2="48" stroke="#EF4444" stroke-width="3.5"/>
-          <line x1="144" y1="28" x2="124" y2="48" stroke="#EF4444" stroke-width="3.5"/>
+          <defs>
+            <linearGradient id="dkbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#991B1B"/><stop offset="100%" stop-color="#C8102E"/></linearGradient>
+          </defs>
+          <rect width="190" height="66" fill="url(#dkbg)"/>
+          <rect x="50" y="0" width="12" height="66" fill="#F8FAFC" opacity="0.95"/>
+          <rect x="0" y="27" width="190" height="12" fill="#F8FAFC" opacity="0.95"/>
+          <rect width="190" height="66" fill="rgba(15,23,42,0.18)"/>
+          <g transform="translate(132,36)">
+            <circle r="19" fill="#0F172A" opacity="0.92" stroke="#F8FAFC" stroke-width="1.2"/>
+            <rect x="-11" y="-8" width="15" height="16" rx="1.5" fill="#334155" stroke="#94A3B8" stroke-width="0.9"/>
+            <circle cx="-3.5" cy="-2" r="3" fill="#CBD5E1"/>
+            <path d="M-8,6 C-8,2 1,2 1,6" fill="#CBD5E1"/>
+            <line x1="-10" y1="-10" x2="11" y2="11" stroke="#EF4444" stroke-width="3.2" stroke-linecap="round"/>
+            <line x1="11" y1="-10" x2="-10" y2="11" stroke="#EF4444" stroke-width="3.2" stroke-linecap="round"/>
+          </g>
         </svg>
         <span class="sm-pill">DENMARK: EXPEL</span>
         <span class="sm-cap">Plot &middot; Al Jazeera</span>
@@ -524,11 +481,22 @@
     <article class="card-sm">
       <div class="art-sm">
         <svg viewBox="0 0 190 66" xmlns="http://www.w3.org/2000/svg">
-          <rect width="190" height="66" fill="#1E1B4B"/>
-          <rect x="18" y="30" width="22" height="30" fill="#334155"/><rect x="46" y="22" width="22" height="38" fill="#475569"/>
-          <rect x="74" y="26" width="22" height="34" fill="#334155"/>
-          <rect x="116" y="26" width="60" height="25" rx="3" fill="#0F172A" stroke="#F59E0B" stroke-width="2"/>
-          <text x="146" y="42" text-anchor="middle" fill="#FDE68A" font-size="10.5" font-weight="900">AI TAX</text>
+          <defs>
+            <linearGradient id="usbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1E1B4B"/><stop offset="100%" stop-color="#0F172A"/></linearGradient>
+          </defs>
+          <rect width="190" height="66" fill="url(#usbg)"/>
+          <g stroke="#312E81" stroke-width="0.6" opacity="0.6">
+            <line x1="0" y1="18" x2="190" y2="18"/><line x1="0" y1="36" x2="190" y2="36"/><line x1="0" y1="54" x2="190" y2="54"/>
+          </g>
+          <!-- Server racks with glowing status LEDs -->
+          <rect x="14" y="28" width="24" height="36" rx="1.5" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+          <rect x="44" y="20" width="24" height="44" rx="1.5" fill="#334155" stroke="#64748B" stroke-width="1"/>
+          <rect x="74" y="25" width="24" height="39" rx="1.5" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+          <g fill="#38BDF8"><rect x="18" y="33" width="12" height="2"/><rect x="18" y="39" width="12" height="2"/><rect x="18" y="45" width="12" height="2"/><rect x="48" y="26" width="12" height="2"/><rect x="48" y="32" width="12" height="2"/><rect x="48" y="38" width="12" height="2"/><rect x="78" y="31" width="12" height="2"/><rect x="78" y="37" width="12" height="2"/></g>
+          <g fill="#F59E0B"><circle cx="34" cy="34" r="1.3"/><circle cx="64" cy="27" r="1.3"/><circle cx="94" cy="32" r="1.3"/></g>
+          <!-- Tariff stamp badge -->
+          <rect x="108" y="22" width="72" height="28" rx="3" fill="#0F172A" stroke="#F59E0B" stroke-width="2"/>
+          <text x="144" y="39" text-anchor="middle" fill="#FDE68A" font-size="11" font-weight="900" letter-spacing="0.06em">AI TAX %</text>
         </svg>
         <span class="sm-pill" style="background:#6D28D9;">U.S.: AI TAX</span>
         <span class="sm-cap">Briefing &middot; ABC</span>
@@ -541,10 +509,20 @@
     <article class="card-sm">
       <div class="art-sm">
         <svg viewBox="0 0 190 66" xmlns="http://www.w3.org/2000/svg">
-          <rect width="95" height="66" fill="#0F357A"/><rect x="95" width="95" height="66" fill="#B91C1C"/>
-          <circle cx="46" cy="40" r="12" fill="none" stroke="#FFF" stroke-width="2" stroke-dasharray="3 4"/>
-          <polygon points="148,28 151,36 159,36 153,41 155,49 148,44 141,49 143,41 137,36 145,36" fill="#FACC15"/>
-          <rect x="70" y="34" width="50" height="13" rx="6" fill="#FDE68A" stroke="#1E293B" stroke-width="1.5"/>
+          <defs>
+            <linearGradient id="auL" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0C2D6B"/><stop offset="100%" stop-color="#1E40AF"/></linearGradient>
+            <linearGradient id="cnR" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#991B1B"/><stop offset="100%" stop-color="#DC2626"/></linearGradient>
+          </defs>
+          <rect width="95" height="66" fill="url(#auL)"/><rect x="95" width="95" height="66" fill="url(#cnR)"/>
+          <line x1="95" y1="0" x2="95" y2="66" stroke="#FDE68A" stroke-width="1" opacity="0.5"/>
+          <!-- Southern Cross stars -->
+          <g fill="#F8FAFC"><circle cx="32" cy="40" r="2.6"/><circle cx="46" cy="30" r="2.2"/><circle cx="56" cy="42" r="2.2"/><circle cx="44" cy="52" r="2.8"/><circle cx="52" cy="48" r="1.4"/></g>
+          <!-- Chinese gold star -->
+          <polygon points="150,24 153,33 162,33 155,39 158,48 150,42 142,48 145,39 138,33 147,33" fill="#FACC15"/>
+          <!-- Diplomatic neural link bridge -->
+          <line x1="58" y1="40" x2="132" y2="40" stroke="#FDE68A" stroke-width="1.8" stroke-dasharray="3 2"/>
+          <rect x="69" y="31" width="52" height="17" rx="8.5" fill="#0F172A" stroke="#FDE68A" stroke-width="1.6"/>
+          <text x="95" y="42.5" text-anchor="middle" fill="#FDE68A" font-size="8.6" font-weight="900">AI TALKS</text>
         </svg>
         <span class="sm-pill" style="background:#0E7490;">AUS&ndash;CHINA: AI</span>
         <span class="sm-cap">Agreed &middot; ABC</span>
@@ -560,10 +538,18 @@
     <article class="card-sm">
       <div class="art-sm">
         <svg viewBox="0 0 190 66" xmlns="http://www.w3.org/2000/svg">
-          <rect width="190" height="33" fill="#005BBB"/><rect y="33" width="190" height="33" fill="#FFD500"/>
-          <rect y="40" width="190" height="26" fill="rgba(15,23,42,0.8)"/>
-          <line x1="20" y1="51" x2="170" y2="51" stroke="#E2E8F0" stroke-width="3"/>
-          <circle cx="96" cy="51" r="8" fill="#EF4444" opacity="0.82"/>
+          <defs>
+            <linearGradient id="uaSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#004799"/><stop offset="65%" stop-color="#005BBB"/><stop offset="100%" stop-color="#FACC15"/></linearGradient>
+          </defs>
+          <rect width="190" height="40" fill="url(#uaSky)"/>
+          <rect y="40" width="190" height="26" fill="#0F172A"/>
+          <!-- Kerch strait bridge arch silhouette -->
+          <path d="M0,45 L62,45 Q95,24 128,45 L190,45" fill="none" stroke="#CBD5E1" stroke-width="2.4"/>
+          <line x1="0" y1="47" x2="190" y2="47" stroke="#94A3B8" stroke-width="2"/>
+          <g stroke="#64748B" stroke-width="1.6"><line x1="28" y1="47" x2="28" y2="66"/><line x1="62" y1="45" x2="62" y2="66"/><line x1="128" y1="45" x2="128" y2="66"/><line x1="162" y1="47" x2="162" y2="66"/></g>
+          <!-- Crosshair reticle over central arch -->
+          <circle cx="95" cy="40" r="11" fill="rgba(239,68,68,0.22)" stroke="#EF4444" stroke-width="1.8"/>
+          <line x1="95" y1="25" x2="95" y2="55" stroke="#EF4444" stroke-width="1.1"/><line x1="80" y1="40" x2="110" y2="40" stroke="#EF4444" stroke-width="1.1"/>
         </svg>
         <span class="sm-pill">KYIV: WARNING</span>
         <span class="sm-cap">Interview &middot; NBC</span>
@@ -576,10 +562,20 @@
     <article class="card-sm">
       <div class="art-sm">
         <svg viewBox="0 0 190 66" xmlns="http://www.w3.org/2000/svg">
-          <rect width="190" height="22" fill="#15803D"/><rect y="22" width="190" height="22" fill="#F8FAFC"/><rect y="44" width="190" height="22" fill="#B91C1C"/>
-          <circle cx="144" cy="38" r="14" fill="#0F172A"/>
-          <circle cx="144" cy="38" r="5" fill="#FACC15"/>
-          <circle cx="144" cy="38" r="10" fill="none" stroke="#FACC15" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <rect width="190" height="22" fill="#15803D"/><rect y="22" width="190" height="22" fill="#F1F5F9"/><rect y="44" width="190" height="22" fill="#B91C1C"/>
+          <rect width="190" height="66" fill="rgba(15,23,42,0.16)"/>
+          <!-- Centrifuge columns on left -->
+          <g fill="#1E293B" stroke="#94A3B8" stroke-width="0.9">
+            <rect x="16" y="30" width="9" height="32" rx="2"/><rect x="29" y="25" width="9" height="37" rx="2"/><rect x="42" y="30" width="9" height="32" rx="2"/>
+          </g>
+          <!-- Nuclear emblem medallion -->
+          <g transform="translate(142,36)">
+            <circle r="17" fill="#0F172A" stroke="#FACC15" stroke-width="1.5"/>
+            <ellipse rx="12" ry="4.5" fill="none" stroke="#FACC15" stroke-width="1.2" transform="rotate(30)"/>
+            <ellipse rx="12" ry="4.5" fill="none" stroke="#FACC15" stroke-width="1.2" transform="rotate(-30)"/>
+            <ellipse rx="12" ry="4.5" fill="none" stroke="#FACC15" stroke-width="1.2" transform="rotate(90)"/>
+            <circle r="3.2" fill="#FACC15"/>
+          </g>
         </svg>
         <span class="sm-pill" style="background:#A16207;">IRAN: URANIUM</span>
         <span class="sm-cap">Statement &middot; ToI</span>
@@ -592,10 +588,16 @@
     <article class="card-sm">
       <div class="art-sm">
         <svg viewBox="0 0 190 66" xmlns="http://www.w3.org/2000/svg">
-          <rect width="190" height="66" fill="#0F172A"/>
-          <polyline points="12,32 48,36 78,42 104,39 132,50 176,58" fill="none" stroke="#EF4444" stroke-width="2.8"/>
-          <text x="122" y="21" fill="#FCA5A5" font-size="10.4" font-weight="900">BTC -3.9%</text>
-          <text x="122" y="34" fill="#CBD5E1" font-size="9" font-weight="800">ETH -6.1%</text>
+          <defs>
+            <linearGradient id="btcArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#EF4444" stop-opacity="0.45"/><stop offset="100%" stop-color="#0F172A" stop-opacity="0.02"/></linearGradient>
+          </defs>
+          <rect width="190" height="66" fill="#0B1220"/>
+          <g stroke="#1E293B" stroke-width="0.7"><line x1="0" y1="22" x2="190" y2="22"/><line x1="0" y1="40" x2="190" y2="40"/><line x1="0" y1="56" x2="190" y2="56"/></g>
+          <polygon points="8,30 42,35 72,41 98,37 128,48 168,56 168,66 8,66" fill="url(#btcArea)"/>
+          <polyline points="8,30 42,35 72,41 98,37 128,48 168,56" fill="none" stroke="#F87171" stroke-width="2.6" stroke-linejoin="round"/>
+          <circle cx="168" cy="56" r="3.2" fill="#EF4444" stroke="#FFF" stroke-width="1"/>
+          <text x="118" y="20" fill="#FCA5A5" font-size="10.8" font-weight="900">BTC -3.9%</text>
+          <text x="118" y="33" fill="#CBD5E1" font-size="9.2" font-weight="800">ETH -6.1%</text>
         </svg>
         <span class="sm-pill" style="background:#C2410C;">BTC: $58,983</span>
         <span class="sm-cap">CoinGecko &middot; 02:08Z</span>
@@ -607,14 +609,7 @@
 
     <article class="card-sm">
       <div class="art-sm">
-        <svg viewBox="0 0 190 66" xmlns="http://www.w3.org/2000/svg">
-          <rect width="190" height="66" fill="#111827"/>
-          <rect x="0" y="45" width="190" height="21" fill="#374151"/>
-          <rect x="52" y="40" width="76" height="10" rx="3" fill="#00D2BE"/>
-          <circle cx="68" cy="51" r="6" fill="#111827" stroke="#E5E7EB" stroke-width="2"/>
-          <circle cx="114" cy="51" r="6" fill="#111827" stroke="#E5E7EB" stroke-width="2"/>
-          <rect x="158" y="8" width="10" height="10" fill="#FFF"/><rect x="168" y="18" width="10" height="10" fill="#FFF"/>
-        </svg>
+        <img src="ART_VEGAS" alt="Las Vegas F1 FP3">
         <span class="sm-pill" style="background:#0F766E;">RUSSELL: P1</span>
         <span class="sm-cap">1:34.041 &middot; F1 FP3</span>
       </div>
@@ -626,10 +621,24 @@
     <article class="card-sm">
       <div class="art-sm">
         <svg viewBox="0 0 190 66" xmlns="http://www.w3.org/2000/svg">
-          <rect width="190" height="29" fill="#0369A1"/><rect y="29" width="190" height="37" fill="#15803D"/>
-          <rect x="136" y="25" width="3" height="29" fill="#FDE68A"/><rect x="143" y="25" width="3" height="29" fill="#FDE68A"/><rect x="150" y="25" width="3" height="29" fill="#FDE68A"/>
-          <rect x="64" y="27" width="9" height="29" rx="2" fill="#F59E0B" transform="rotate(-20 68 41)"/>
-          <circle cx="106" cy="25" r="5" fill="#DC2626"/>
+          <defs>
+            <linearGradient id="nzSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#075985"/><stop offset="100%" stop-color="#38BDF8"/></linearGradient>
+            <linearGradient id="nzTurf" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#15803D"/><stop offset="100%" stop-color="#14532D"/></linearGradient>
+          </defs>
+          <rect width="190" height="30" fill="url(#nzSky)"/><rect y="30" width="190" height="36" fill="url(#nzTurf)"/>
+          <!-- Basin Reserve pitch strip -->
+          <polygon points="88,30 168,30 184,66 74,66" fill="#D6C29F" opacity="0.55"/>
+          <line x1="120" y1="48" x2="172" y2="48" stroke="#FFF" stroke-width="1.3"/>
+          <!-- Stumps + bails -->
+          <rect x="136" y="23" width="3" height="29" fill="#FDE68A" stroke="#92400E" stroke-width="0.4"/>
+          <rect x="143" y="23" width="3" height="29" fill="#FDE68A" stroke="#92400E" stroke-width="0.4"/>
+          <rect x="150" y="23" width="3" height="29" fill="#FDE68A" stroke="#92400E" stroke-width="0.4"/>
+          <rect x="136" y="21.5" width="8" height="2" rx="0.8" fill="#FEF08A"/><rect x="145" y="21.5" width="8" height="2" rx="0.8" fill="#FEF08A"/>
+          <!-- Cricket bat + red leather ball arc -->
+          <path d="M98,27 Q114,16 128,25" fill="none" stroke="#FCA5A5" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <rect x="64" y="26" width="9" height="30" rx="2" fill="#F59E0B" stroke="#78350F" stroke-width="0.8" transform="rotate(-18 68 41)"/>
+          <circle cx="105" cy="24" r="5" fill="#DC2626" stroke="#7F1D1D" stroke-width="0.8"/>
+          <path d="M101,24 Q105,21 109,24" fill="none" stroke="#F8FAFC" stroke-width="0.9"/>
         </svg>
         <span class="sm-pill" style="background:#0E7490;">RAHUL: 124*</span>
         <span class="sm-cap">Tea, Day 3 &middot; AFP</span>
@@ -683,7 +692,7 @@
           <!-- Crisp numbered pins for stories 1-35 -->
           <g font-family="sans-serif" font-size="6.4" font-weight="900" text-anchor="middle">
             <!-- Major illustrated 1-13 -->
-            <circle cx="207" cy="64" r="6" fill="#15803D" stroke="#FFF" stroke-width="0.9"/><text x="207" y="66.2" fill="#FFF">1</text>
+            <circle cx="207" cy="64" r="6" fill="#334155" stroke="#FFF" stroke-width="0.9"/><text x="207" y="66.2" fill="#FFF">1</text>
             <circle cx="220" cy="80" r="6" fill="#A16207" stroke="#FFF" stroke-width="0.9"/><text x="220" y="82.2" fill="#FFF">2</text>
             <circle cx="88" cy="126" r="6" fill="#6D28D9" stroke="#FFF" stroke-width="0.9"/><text x="88" y="128.2" fill="#FFF">3</text>
             <circle cx="299" cy="107" r="5.3" fill="#B91C1C" stroke="#FFF" stroke-width="0.7"/><text x="299" y="109.2" fill="#FFF">4</text>
@@ -702,6 +711,7 @@
             <circle cx="174" cy="60" r="4.6" fill="#1D4ED8"/><text x="174" y="62" fill="#FFF" font-size="5.4">16</text>
             <circle cx="233" cy="79" r="4.6" fill="#A16207"/><text x="233" y="81" fill="#FFF" font-size="5.4">17</text>
             <circle cx="222" cy="91" r="4.6" fill="#A16207"/><text x="222" y="93" fill="#FFF" font-size="5.4">18</text>
+            <circle cx="136" cy="84" r="4.6" fill="#334155" stroke="#93C5FD" stroke-width="0.7"/><text x="136" y="86" fill="#FFF" font-size="5.4">19</text>
             <circle cx="204" cy="94" r="4.6" fill="#15803D"/><text x="204" y="96" fill="#FFF" font-size="5.4">20</text>
             <circle cx="198" cy="116" r="4.6" fill="#15803D"/><text x="198" y="118" fill="#FFF" font-size="5.4">21</text>
             <circle cx="236" cy="140" r="4.6" fill="#15803D"/><text x="236" y="142" fill="#FFF" font-size="5.4">22</text>
@@ -742,7 +752,7 @@
         <div class="w-item"><span class="w-num w-me">18</span><span class="w-loc">Yemen</span> Houthis threaten Jeddah &amp; Red Sea ports <span class="src">(Al Jazeera)</span></div>
         <div class="w-item"><span class="w-num w-am">29</span><span class="w-loc">Caracas</span> U.S.&ndash;Venezuela tentative mil-to-mil ties <span class="src">(PBS)</span></div>
 
-        <div class="w-item"><span class="w-num w-me">19</span><span class="w-loc">Antalya</span> EU warns COP31 risks &ldquo;fossil summit&rdquo; <span class="src">(AFP)</span></div>
+        <div class="w-item"><span class="w-num w-gl">19</span><span class="w-loc">Space</span> ESA/JAXA BepiColombo Mercury arrival burn <span class="src">(ESA)</span></div>
         <div class="w-item"><span class="w-num w-as">30</span><span class="w-loc">Beijing</span> China tells Japan to &ldquo;correct&rdquo; Taiwan words <span class="src">(AFP)</span></div>
 
         <div class="w-item"><span class="w-num w-af">20</span><span class="w-loc">Sudan</span> AfDF approves $26M emergency health grant <span class="src">(AfDB)</span></div>
@@ -764,7 +774,7 @@
   </section>
 
   <div class="scope-box">
-    <strong>Date Scope Check:</strong> Excluded as earlier days&rsquo; news: Cyclone Akvan landfall, Kyiv bridge barrage, UK&ndash;EU reset deal, Wall Street correction &amp; Asian chip sell-off (Fri 20 Nov); ICJ Rohingya ruling &amp; Shenzhen trilateral summit (Thu 19 Nov); Voyager 1 light-day (Wed 18 Nov). Excluded as unconfirmed: BepiColombo Mercury orbit insertion &amp; any final COP31 text.
+    <strong>Date Scope Check:</strong> Excluded as earlier days&rsquo; news: Cyclone Akvan landfall, Kyiv bridge barrage, UK&ndash;EU reset deal, Wall Street correction &amp; Asian chip sell-off (Fri 20 Nov); ICJ Rohingya ruling &amp; Shenzhen trilateral summit (Thu 19 Nov); Voyager 1 light-day (Wed 18 Nov). Excluded as unconfirmed: final COP31 agreement text.
   </div>
   <div class="foot-line">
     <span>Every story happened or first broke on Saturday 21 November 2026 &middot; Officials&rsquo; counts and claims attributed</span>
